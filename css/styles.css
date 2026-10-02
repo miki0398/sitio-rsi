@@ -1,6 +1,6 @@
 .hero { 
   background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
-              url('../images/hero-soldadura.png') no-repeat center/cover; 
+              url('../Hero%20background%20rsi%20image.png') no-repeat center/cover; 
   padding: 100px 0; 
   min-height: 480px;
 }
