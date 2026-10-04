@@ -8,46 +8,96 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="index.html">Resoluciones Industriales</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="nav" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Nosotros</a></li>
+        <li class="nav-item"><a class="nav-link active" href="contact.html">Contacto</a></li>
+      </ul>
+    </div>
   </div>
 </nav>
 
 <main class="container my-5">
-  <h1>Contacto</h1>
-  <p>Completá el formulario y te responderemos a la brevedad.</p>
+  <div class="row">
+    
+    <!-- Formulario -->
+    <div class="col-lg-7 mb-4">
+      <h1 class="mb-3">Contacto</h1>
+      <p class="text-muted mb-4">Completá el formulario y te responderemos a la brevedad.</p>
 
-  <!-- IMPORTANTE: reemplaza el valor de action por tu endpoint de Formspree (https://formspree.io/f/yourFormId) -->
-  <form action="https://formspree.io/f/yourformid" method="POST" class="row g-3">
-    <div class="col-md-6">
-      <label for="name" class="form-label">Nombre</label>
-      <input type="text" class="form-control" id="name" name="name" required>
+      <form action="https://formspree.io/f/mjkavakw" method="POST" class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="col-12">
+          <label for="phone" class="form-label">Teléfono (opcional)</label>
+          <input type="tel" class="form-control" id="phone" name="phone">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Mensaje</label>
+          <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-primary btn-lg" type="submit">Enviar mensaje</button>
+        </div>
+      </form>
     </div>
-    <div class="col-md-6">
-      <label for="email" class="form-label">Email</label>
-      <input type="email" class="form-control" id="email" name="_replyto" required>
-    </div>
-    <div class="col-12">
-      <label for="message" class="form-label">Mensaje</label>
-      <textarea id="message" name="message" rows="6" class="form-control" required></textarea>
-    </div>
-    <div class="col-12">
-      <button class="btn btn-primary" type="submit">Enviar</button>
-    </div>
-  </form>
 
-  <hr class="my-4">
-  <h5>Teléfono</h5>
-  <p>+54 9 XX XXX-XXXX</p>
-  <h5>Dirección</h5>
-  <p>Buenos Aires, Argentina</p>
+    <!-- Datos de contacto -->
+    <div class="col-lg-5">
+      <div class="bg-light rounded p-4 h-100">
+        <h4 class="mb-4">Datos de contacto</h4>
+        
+        <div class="mb-4">
+          <h6 class="text-muted mb-1">Email</h6>
+          <p class="mb-0">
+            <a href="mailto:hola@resolucionesindustriales.com">hola@resolucionesindustriales.com</a>
+          </p>
+        </div>
 
+        <div class="mb-4">
+          <h6 class="text-muted mb-1">Teléfono</h6>
+          <p class="mb-0">
+            <!-- REEMPLAZAR CON TU TELÉFONO -->
+            +54 9 11 3299-3511
+          </p>
+        </div>
+
+        <div class="mb-4">
+          <h6 class="text-muted mb-1">Dirección</h6>
+          <p class="mb-0">
+            <!-- REEMPLAZAR CON TU DIRECCIÓN -->
+            Cullen 5050, Ciudad Autónoma de Buenos Aires, Argentina
+          </p>
+        </div>
+
+        <hr>
+        <p class="small text-muted mb-0">
+          Respondemos consultas de lunes a viernes en horario comercial.
+        </p>
+      </div>
+    </div>
+
+  </div>
 </main>
 
 <footer class="py-4 bg-dark text-white">
   <div class="container text-center">
-    <p class="mb-0">© Resoluciones Industriales</p>
+    <p class="mb-0">© Resoluciones Industriales — Alambres y electrodos</p>
   </div>
 </footer>
 
